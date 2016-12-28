@@ -575,13 +575,14 @@ end
 		N = length(obs_rhos)+1
 		#W = eye(2*(N-1)- 1)
 		# testing recovery of params with fake data
+		#=
 		println("Testing recovery of parameters with 'fake' data")
 		x0 = [15.0; log(5.0)]
 		nlrho,nlff,nllamb = price_sched_calc(x0,N)
 		obs_rhos = nlrho[2:end]
 		obs_ff = [0.0;nlff[3:end]]
 		println(obs_rhos)
-		
+		=#
 
 
 		#ux0 = [3.0,15.0]
